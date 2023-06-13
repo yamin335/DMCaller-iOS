@@ -1,0 +1,33 @@
+//
+//  PrefixHeader.pch
+//  RTCPhone
+//
+//  Created by Mamun Ar Rashid on 3/9/18.
+//  Copyright © 2018 Mamun Ar Rashid. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+
+
+#endif /* PrefixHeader_pch */
+
+#ifdef __OBJC__
+#import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
+#endif
+
+#import "Log.h"
+#import "Utils.h"
+#import "Contact.h"
+
+#import "UIToggleButton.h"
+#import "UISpeakerButton.h"
+#import "UIBluetoothButton.h"
+#import "UIMutedMicroButton.h"
+
+#import "UIChatBubbleTextCell.h"

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="14460.32" systemVersion="17G4015" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="CallLog" representedClassName=".CallLog" syncable="YES">
+        <attribute name="callDialType" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="callType" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="duration" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="endDateTime" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="hourMS" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="phoneNumber" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="phoneUser" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="startDateTime" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+    </entity>
+    <entity name="Contacts" representedClassName=".Contacts" syncable="YES" codeGenerationType="class">
+        <attribute name="familyName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="favorite" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="givenName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="identifier" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="phonenumbers" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="PhoneNumbers" inverseName="contact" inverseEntity="PhoneNumbers" syncable="YES"/>
+    </entity>
+    <entity name="PhoneNumbers" representedClassName=".PhoneNumbers" syncable="YES" codeGenerationType="class">
+        <attribute name="identifier" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="label" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="number" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="contact" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Contacts" inverseName="phonenumbers" inverseEntity="Contacts" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="CallLog" positionX="-63" positionY="-18" width="128" height="30"/>
+        <element name="Contacts" positionX="-305.0390625" positionY="-195.41796875" width="128" height="120"/>
+        <element name="PhoneNumbers" positionX="-93.64453125" positionY="-165.7578125" width="128" height="105"/>
+    </elements>
+</model>

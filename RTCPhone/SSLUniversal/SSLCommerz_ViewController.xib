@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SSLCommerz_ViewController">
+            <connections>
+                <outlet property="SSLCOMMERZWebview" destination="jwX-GR-4ac" id="E1v-Qg-dcd"/>
+                <outlet property="SSLCOMMERZ_WebViewContainer" destination="Muj-8a-9wJ" id="4l2-u9-xHd"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="webviewContainerTopSpaceConstratint" destination="7kH-g5-IWg" id="PAu-8h-SGc"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ajc-fF-P9a">
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sslcommerz.png" translatesAutoresizingMaskIntoConstraints="NO" id="pp8-Ka-t7p">
+                            <constraints>
+                                <constraint firstAttribute="width" constant="170" id="GzM-Oz-OfW"/>
+                                <constraint firstAttribute="height" constant="35" id="aKM-kl-FbA"/>
+                            </constraints>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" red="0.9212072491645813" green="0.84832113981246948" blue="0.62377804517745972" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstItem="pp8-Ka-t7p" firstAttribute="centerY" secondItem="Ajc-fF-P9a" secondAttribute="centerY" constant="10" id="KjL-PZ-w9H"/>
+                        <constraint firstAttribute="height" constant="85" id="fe6-HI-sEm"/>
+                        <constraint firstItem="pp8-Ka-t7p" firstAttribute="centerX" secondItem="Ajc-fF-P9a" secondAttribute="centerX" id="v2h-J5-dfb"/>
+                    </constraints>
+                </view>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="zLD-lF-GUM">
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="E50-Nc-RSF"/>
+                        <outlet property="delegate" destination="-1" id="Eiv-wA-9VW"/>
+                    </connections>
+                </tableView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NUk-nc-Asp">
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="z9O-fq-7jI">
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QRy-a2-51e">
+                                    <constraints>
+                                        <constraint firstAttribute="width" secondItem="QRy-a2-51e" secondAttribute="height" multiplier="1:1" id="vvF-FP-udV"/>
+                                    </constraints>
+                                    <state key="normal" backgroundImage="CloseButton.png"/>
+                                    <connections>
+                                        <action selector="sdkCloseTapped:" destination="-1" eventType="touchUpInside" id="hQy-bv-Qog"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.21053340517241378" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="bottom" secondItem="QRy-a2-51e" secondAttribute="bottom" constant="8" id="f5C-XK-Zv5"/>
+                                <constraint firstItem="QRy-a2-51e" firstAttribute="top" secondItem="z9O-fq-7jI" secondAttribute="top" constant="8" id="k1F-ac-9tb"/>
+                                <constraint firstItem="QRy-a2-51e" firstAttribute="centerY" secondItem="z9O-fq-7jI" secondAttribute="centerY" id="pUR-cM-vqK"/>
+                                <constraint firstItem="QRy-a2-51e" firstAttribute="centerX" secondItem="z9O-fq-7jI" secondAttribute="centerX" id="vRZ-k7-KC4"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="60" id="E83-XO-XMW"/>
+                        <constraint firstItem="z9O-fq-7jI" firstAttribute="top" secondItem="NUk-nc-Asp" secondAttribute="top" id="SB1-qv-O4I"/>
+                        <constraint firstAttribute="bottom" secondItem="z9O-fq-7jI" secondAttribute="bottom" id="ZSs-CC-N0d"/>
+                        <constraint firstItem="z9O-fq-7jI" firstAttribute="leading" secondItem="NUk-nc-Asp" secondAttribute="leading" id="vr0-6e-2Vq"/>
+                        <constraint firstAttribute="trailing" secondItem="z9O-fq-7jI" secondAttribute="trailing" id="xeE-2x-Lgv"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Muj-8a-9wJ">
+                    <subviews>
+                        <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jwX-GR-4ac">
+                            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <connections>
+                                <outlet property="delegate" destination="-1" id="xnh-Yj-RSh"/>
+                            </connections>
+                        </webView>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fnA-Zp-1KN">
+                            <color key="backgroundColor" red="1" green="0.80000001190000003" blue="0.40000000600000002" alpha="0.25247844827586208" colorSpace="custom" customColorSpace="sRGB"/>
+                            <state key="normal" title="CLOSE"/>
+                            <connections>
+                                <action selector="closeButtonTapped:" destination="-1" eventType="touchUpInside" id="1oL-kP-GVF"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstItem="fnA-Zp-1KN" firstAttribute="top" secondItem="jwX-GR-4ac" secondAttribute="bottom" id="0LC-DD-u2v"/>
+                        <constraint firstItem="fnA-Zp-1KN" firstAttribute="leading" secondItem="Muj-8a-9wJ" secondAttribute="leading" id="9fu-yI-IFh"/>
+                        <constraint firstAttribute="trailing" secondItem="fnA-Zp-1KN" secondAttribute="trailing" id="EXu-ct-I4C"/>
+                        <constraint firstAttribute="bottom" secondItem="fnA-Zp-1KN" secondAttribute="bottom" id="Mh1-wZ-l0p"/>
+                        <constraint firstAttribute="trailing" secondItem="jwX-GR-4ac" secondAttribute="trailing" id="hyY-mV-Jwc"/>
+                        <constraint firstItem="jwX-GR-4ac" firstAttribute="top" secondItem="Muj-8a-9wJ" secondAttribute="top" id="vtY-gu-JQF"/>
+                        <constraint firstAttribute="bottom" secondItem="jwX-GR-4ac" secondAttribute="bottom" constant="50" id="w7X-Tk-wsg"/>
+                        <constraint firstItem="jwX-GR-4ac" firstAttribute="leading" secondItem="Muj-8a-9wJ" secondAttribute="leading" id="zwk-Re-pr7"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.90823972225189209" green="0.92638683319091797" blue="0.9317171573638916" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="zLD-lF-GUM" secondAttribute="trailing" constant="30" id="0pl-FA-OCu"/>
+                <constraint firstAttribute="bottom" secondItem="Muj-8a-9wJ" secondAttribute="bottom" id="6p8-2a-ZtE"/>
+                <constraint firstItem="Muj-8a-9wJ" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="7kH-g5-IWg"/>
+                <constraint firstAttribute="trailing" secondItem="Muj-8a-9wJ" secondAttribute="trailing" id="7rh-5w-Fg2"/>
+                <constraint firstItem="Ajc-fF-P9a" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Abc-qe-Ejn"/>
+                <constraint firstItem="NUk-nc-Asp" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="C3h-LZ-x4n"/>
+                <constraint firstItem="Muj-8a-9wJ" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Ray-c8-Cew"/>
+                <constraint firstItem="Ajc-fF-P9a" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="XFr-Sm-ijE"/>
+                <constraint firstAttribute="trailing" secondItem="Ajc-fF-P9a" secondAttribute="trailing" id="dxW-jx-zQw"/>
+                <constraint firstAttribute="trailing" secondItem="NUk-nc-Asp" secondAttribute="trailing" id="kib-SU-XxH"/>
+                <constraint firstItem="zLD-lF-GUM" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="90" id="m5g-aQ-gkp"/>
+                <constraint firstAttribute="bottom" secondItem="NUk-nc-Asp" secondAttribute="bottom" id="qPV-uL-CpX"/>
+                <constraint firstAttribute="bottom" secondItem="zLD-lF-GUM" secondAttribute="bottom" id="stH-vd-qTV"/>
+                <constraint firstItem="zLD-lF-GUM" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="30" id="zIm-ll-tHP"/>
+            </constraints>
+            <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="CloseButton.png" width="2000" height="2000"/>
+        <image name="sslcommerz.png" width="215" height="41"/>
+    </resources>
+</document>

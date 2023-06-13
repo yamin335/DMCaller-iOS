@@ -1,0 +1,27 @@
+{
+  "images" : [
+    {
+      "idiom" : "universal",
+      "filename" : "baseline_favorite_white_36pt_1x.png"
+    },
+    {
+      "idiom" : "universal",
+      "filename" : "baseline_favorite_white_36pt_2x.png",
+      "unassigned" : true,
+      "scale" : "2x"
+    },
+    {
+      "idiom" : "universal",
+      "filename" : "baseline_favorite_white_36pt_3x.png",
+      "unassigned" : true,
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "version" : 1,
+    "author" : "xcode"
+  },
+  "properties" : {
+    "template-rendering-intent" : "template"
+  }
+}
